@@ -1,0 +1,6 @@
+.idea/*
+env/
+*.pyc
+.project
+.pydevproject
+page_load_time.txt

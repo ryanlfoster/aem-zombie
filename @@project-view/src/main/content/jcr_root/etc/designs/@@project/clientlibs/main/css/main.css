@@ -1,0 +1,9 @@
+@import "../../../global/sass/utils";
+@import "../../../global/sass/vars";
+
+@import "typography";
+@import "normalize";
+@import "base";
+@import "block";
+@import "icon/arrows";
+@import "button/btnprevnextbig";

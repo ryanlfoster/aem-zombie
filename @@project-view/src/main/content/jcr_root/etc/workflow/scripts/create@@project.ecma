@@ -1,0 +1,68 @@
+var workflowData = workItem.getWorkflowData();
+if (workflowData.getPayloadType() == "JCR_PATH") {
+    var path = workflowData.getPayload().toString();
+    if (workflowSession.getSession().itemExists(path)) { 
+        var node = workflowSession.getSession().getItem(path);
+        var jcrNode = node.getNode("jcr:content");
+        jcrNode.setProperty("redirectTarget", path+"/about");
+        var parent = node.getParent();
+        node.addNode("about", "cq:Page");
+		var childPage = node.getNode("about");
+        childPage.addNode("jcr:content","cq:PageContent");
+        var childPageC = childPage.getNode("jcr:content");
+        childPageC.setProperty("jcr:title","About");
+        childPageC.setProperty("sling:resourceType","lodges/components/pagetypes/contentLodge");
+        childPageC.setProperty("cq:template","/apps/lodges/templates/pagetypes/contentLodge");
+        childPageC.setProperty("cq:designPath","/etc/designs/lodges");
+
+        node.addNode("the-experience", "cq:Page");
+		childPage = node.getNode("the-experience");
+        childPage.addNode("jcr:content","cq:PageContent");
+        childPageC = childPage.getNode("jcr:content");
+        childPageC.setProperty("jcr:title","The Experience");
+        childPageC.setProperty("sling:resourceType","lodges/components/pagetypes/contentLodge");
+        childPageC.setProperty("cq:template","/apps/lodges/templates/pagetypes/contentLodge");
+        childPageC.setProperty("cq:designPath","/etc/designs/lodges");
+
+        node.addNode("rooms", "cq:Page");
+        childPage = node.getNode("rooms");
+        childPage.addNode("jcr:content","cq:PageContent");
+        childPageC = childPage.getNode("jcr:content");
+        childPageC.setProperty("jcr:title","Rooms");
+        childPageC.setProperty("sling:resourceType","lodges/components/pagetypes/contentLodge");
+        childPageC.setProperty("cq:template","/apps/lodges/templates/pagetypes/contentLodge");
+        childPageC.setProperty("cq:designPath","/etc/designs/lodges");
+
+        node.addNode("rates", "cq:Page");
+        childPage = node.getNode("rates");
+        childPage.addNode("jcr:content","cq:PageContent");
+        childPageC = childPage.getNode("jcr:content");
+        childPageC.setProperty("jcr:title","Rates");
+        childPageC.setProperty("sling:resourceType","lodges/components/pagetypes/contentLodge");
+        childPageC.setProperty("cq:template","/apps/lodges/templates/pagetypes/contentLodge");
+        childPageC.setProperty("cq:designPath","/etc/designs/lodges");
+
+		node.addNode("about-the-destination", "cq:Page");
+        childPage = node.getNode("about-the-destination");
+        childPage.addNode("jcr:content","cq:PageContent");
+        childPageC = childPage.getNode("jcr:content");
+        childPageC.setProperty("jcr:title","About the Destination");
+        childPageC.setProperty("sling:resourceType","lodges/components/pagetypes/contentLodge");
+        childPageC.setProperty("cq:template","/apps/lodges/templates/pagetypes/contentLodge");
+        childPageC.setProperty("cq:designPath","/etc/designs/lodges");
+
+		node.addNode("plan-your-stay", "cq:Page");
+        childPage = node.getNode("plan-your-stay");
+        childPage.addNode("jcr:content","cq:PageContent");
+        childPageC = childPage.getNode("jcr:content");
+        childPageC.setProperty("jcr:title","Plan Your Stay");
+        childPageC.setProperty("sling:resourceType","lodges/components/pagetypes/contentLodge");
+        childPageC.setProperty("cq:template","/apps/lodges/templates/pagetypes/contentLodge");
+        childPageC.setProperty("cq:designPath","/etc/designs/lodges");
+
+        node.save();
+
+    } else {
+        log.warn("Item does not exist: " + path);
+    }
+}

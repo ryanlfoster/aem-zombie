@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          jcr:primaryType="cq:Dialog"
+          height="600"
+          width="800"
+          stateful="false"
+          xtype="dialog">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <tabs jcr:primaryType="cq:TabPanel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <basic
+                        jcr:primaryType="cq:Widget"
+                        path="/apps/natgeo/components/pagetypes/util/page/tab-ngs-all.infinity.json"
+                        xtype="cqinclude"/>
+                <meta
+                        jcr:primaryType="cq:Widget"
+                        path="/apps/natgeo/components/pagetypes/util/page/tab-ngs-meta.infinity.json"
+                        xtype="cqinclude"/>
+                <page
+                        jcr:primaryType="cq:Widget"
+                        path="/apps/natgeo/components/pagetypes/util/page/tab-ngs-page.infinity.json"
+                        xtype="cqinclude"/>
+            </items>
+        </tabs>
+    </items>
+</jcr:root>

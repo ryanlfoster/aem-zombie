@@ -1,0 +1,11 @@
+target/
+/.vagrant
+*.pyc
+artifacts/*.zip
+
+# Eclipse
+.settings
+.project
+.pydevproject
+.classpath
+*.iml

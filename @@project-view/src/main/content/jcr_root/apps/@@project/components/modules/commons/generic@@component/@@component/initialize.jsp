@@ -1,0 +1,10 @@
+<%@ include file="/apps/componentry/init.jsp" %>
+<div class="slider-initialize"
+	data-cssselector="${model.cssselector}"
+	data-id="${model.componentId}"
+	data-items="1"
+	data-autoplay="true"
+	data-autoplayTimeout="5000"
+	data-autoplayHoverPause="true"
+	data-loop="true"
+    data-plugins='{"readMoreButton":true,"pageSlideSelector":"${model.pageSlideCssSelector}","readMoreButtonText":"${model.readMoreBtnText}"}'></div>

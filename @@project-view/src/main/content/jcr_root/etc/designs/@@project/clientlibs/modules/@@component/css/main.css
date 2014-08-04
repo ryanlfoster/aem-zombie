@@ -1,0 +1,57 @@
+/*
+ * ===========================================
+ * WAYS TO BOOK COMPONENT
+ * ===========================================
+ */
+
+.waystobook- {
+
+	&title {
+		font-size: 0.8rem;
+		border-bottom: 1px solid #666;
+		border-top: 1px solid #666;
+		text-align: center;
+		font-weight: 400;
+		color: #666;
+		text-transform: uppercase;
+		line-height: 1rem;
+		padding: 0.6rem;
+	}
+
+	&list{
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		color: #666;
+
+		h3 {
+			text-transform: uppercase;
+			font-weight: 600;
+		}
+		p {
+			line-height: 1.2rem;
+		}
+		li {
+			border-bottom: 1px solid #666;
+			margin-bottom: 1rem;
+		}
+	}
+
+	&link {
+		padding: 0.3rem;
+		width: 100%;
+		border: 1px solid #181e2e;
+		text-align: center;
+		border-radius: 6px;
+
+		a {
+			color: #181e2e;
+			text-decoration: none;
+			font-family: sans-serif;
+			font-weight: 500;
+			text-transform: uppercase;
+			font-size: 0.8rem;
+		}
+	}
+
+}

@@ -1,0 +1,5 @@
+/node_modules
+/target
+/bower_components
+/.sass-cache
+/src/main/content/jcr_root/etc/designs/news/js/vendor
