@@ -10,11 +10,11 @@
             <items jcr:primaryType="cq:WidgetCollection">
                 <collection
                         jcr:primaryType="cq:Widget"
-                        path="/apps/lodges/components/modules/commons/genericslider/GenericSlider/collection-config.infinity.json"                        
+                        path="/apps/@@project/components/modules/commons/genericslider/GenericSlider/collection-config.infinity.json"                        
                         xtype="cqinclude"/>
                  <assetselector
                         jcr:primaryType="cq:Widget"
-                        path="/apps/lodges/components/modules/commons/genericslider/HeroCarousel/selector-assets.infinity.json"
+                        path="/apps/@@project/components/modules/commons/genericslider/HeroCarousel/selector-assets.infinity.json"
                         xtype="cqinclude"/>
                  <storyquery
                     jcr:primaryType="cq:Widget"

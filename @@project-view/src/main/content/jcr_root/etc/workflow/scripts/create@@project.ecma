@@ -11,54 +11,54 @@ if (workflowData.getPayloadType() == "JCR_PATH") {
         childPage.addNode("jcr:content","cq:PageContent");
         var childPageC = childPage.getNode("jcr:content");
         childPageC.setProperty("jcr:title","About");
-        childPageC.setProperty("sling:resourceType","lodges/components/pagetypes/contentLodge");
-        childPageC.setProperty("cq:template","/apps/lodges/templates/pagetypes/contentLodge");
-        childPageC.setProperty("cq:designPath","/etc/designs/lodges");
+        childPageC.setProperty("sling:resourceType","@@project/components/pagetypes/contentLodge");
+        childPageC.setProperty("cq:template","/apps/@@project/templates/pagetypes/contentLodge");
+        childPageC.setProperty("cq:designPath","/etc/designs/@@project");
 
         node.addNode("the-experience", "cq:Page");
 		childPage = node.getNode("the-experience");
         childPage.addNode("jcr:content","cq:PageContent");
         childPageC = childPage.getNode("jcr:content");
         childPageC.setProperty("jcr:title","The Experience");
-        childPageC.setProperty("sling:resourceType","lodges/components/pagetypes/contentLodge");
-        childPageC.setProperty("cq:template","/apps/lodges/templates/pagetypes/contentLodge");
-        childPageC.setProperty("cq:designPath","/etc/designs/lodges");
+        childPageC.setProperty("sling:resourceType","@@project/components/pagetypes/contentLodge");
+        childPageC.setProperty("cq:template","/apps/@@project/templates/pagetypes/contentLodge");
+        childPageC.setProperty("cq:designPath","/etc/designs/@@project");
 
         node.addNode("rooms", "cq:Page");
         childPage = node.getNode("rooms");
         childPage.addNode("jcr:content","cq:PageContent");
         childPageC = childPage.getNode("jcr:content");
         childPageC.setProperty("jcr:title","Rooms");
-        childPageC.setProperty("sling:resourceType","lodges/components/pagetypes/contentLodge");
-        childPageC.setProperty("cq:template","/apps/lodges/templates/pagetypes/contentLodge");
-        childPageC.setProperty("cq:designPath","/etc/designs/lodges");
+        childPageC.setProperty("sling:resourceType","@@project/components/pagetypes/contentLodge");
+        childPageC.setProperty("cq:template","/apps/@@project/templates/pagetypes/contentLodge");
+        childPageC.setProperty("cq:designPath","/etc/designs/@@project");
 
         node.addNode("rates", "cq:Page");
         childPage = node.getNode("rates");
         childPage.addNode("jcr:content","cq:PageContent");
         childPageC = childPage.getNode("jcr:content");
         childPageC.setProperty("jcr:title","Rates");
-        childPageC.setProperty("sling:resourceType","lodges/components/pagetypes/contentLodge");
-        childPageC.setProperty("cq:template","/apps/lodges/templates/pagetypes/contentLodge");
-        childPageC.setProperty("cq:designPath","/etc/designs/lodges");
+        childPageC.setProperty("sling:resourceType","@@project/components/pagetypes/contentLodge");
+        childPageC.setProperty("cq:template","/apps/@@project/templates/pagetypes/contentLodge");
+        childPageC.setProperty("cq:designPath","/etc/designs/@@project");
 
 		node.addNode("about-the-destination", "cq:Page");
         childPage = node.getNode("about-the-destination");
         childPage.addNode("jcr:content","cq:PageContent");
         childPageC = childPage.getNode("jcr:content");
         childPageC.setProperty("jcr:title","About the Destination");
-        childPageC.setProperty("sling:resourceType","lodges/components/pagetypes/contentLodge");
-        childPageC.setProperty("cq:template","/apps/lodges/templates/pagetypes/contentLodge");
-        childPageC.setProperty("cq:designPath","/etc/designs/lodges");
+        childPageC.setProperty("sling:resourceType","@@project/components/pagetypes/contentLodge");
+        childPageC.setProperty("cq:template","/apps/@@project/templates/pagetypes/contentLodge");
+        childPageC.setProperty("cq:designPath","/etc/designs/@@project");
 
 		node.addNode("plan-your-stay", "cq:Page");
         childPage = node.getNode("plan-your-stay");
         childPage.addNode("jcr:content","cq:PageContent");
         childPageC = childPage.getNode("jcr:content");
         childPageC.setProperty("jcr:title","Plan Your Stay");
-        childPageC.setProperty("sling:resourceType","lodges/components/pagetypes/contentLodge");
-        childPageC.setProperty("cq:template","/apps/lodges/templates/pagetypes/contentLodge");
-        childPageC.setProperty("cq:designPath","/etc/designs/lodges");
+        childPageC.setProperty("sling:resourceType","@@project/components/pagetypes/contentLodge");
+        childPageC.setProperty("cq:template","/apps/@@project/templates/pagetypes/contentLodge");
+        childPageC.setProperty("cq:designPath","/etc/designs/@@project");
 
         node.save();
 

@@ -1,4 +1,4 @@
-package com.nationalgeographic.sites.travel.lodges.componentry.components.promo;
+package com.nationalgeographic.sites.travel.@@project.componentry.components.promo;
 
 /**
  * 

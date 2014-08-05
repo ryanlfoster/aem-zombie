@@ -3,4 +3,4 @@
           jcr:description="Creates a Collection"
           jcr:primaryType="cq:Component"
           jcr:title="Collection"
-          sling:resourceSuperType="lodges/components/pagetypes/home"/>
+          sling:resourceSuperType="@@project/components/pagetypes/home"/>

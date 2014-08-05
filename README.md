@@ -1,4 +1,4 @@
-# lodges
+# @@project
 
 ## Development environment setup
 

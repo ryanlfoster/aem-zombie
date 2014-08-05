@@ -1,11 +1,11 @@
-package com.nationalgeographic.sites.travel.lodges.componentry.components.commons.genericSlider.heroCarousel;
+package com.nationalgeographic.sites.travel.@@project.componentry.components.commons.genericSlider.heroCarousel;
 
 import org.apache.sling.api.resource.ValueMap;
 
 import com.nationalgeographic.cq.util.RequestContext;
-import com.nationalgeographic.sites.travel.lodges.componentry.components.commons.genericSlider.GenericSlider;
-import com.nationalgeographic.sites.travel.lodges.componentry.components.commons.genericSlider.heroCarousel.paramsResolver.impl.HeroCarouselParamsResolver;
-import com.nationalgeographic.sites.travel.lodges.componentry.components.commons.genericSlider.paramsResolver.ParamsResolver;
+import com.nationalgeographic.sites.travel.@@project.componentry.components.commons.genericSlider.GenericSlider;
+import com.nationalgeographic.sites.travel.@@project.componentry.components.commons.genericSlider.heroCarousel.paramsResolver.impl.HeroCarouselParamsResolver;
+import com.nationalgeographic.sites.travel.@@project.componentry.components.commons.genericSlider.paramsResolver.ParamsResolver;
 import com.day.cq.i18n.I18n;
 
 public class HeroCarousel extends GenericSlider {

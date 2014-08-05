@@ -1,4 +1,4 @@
-package com.nationalgeographic.sites.travel.lodges.componentry.components.commons.genericSlider;
+package com.nationalgeographic.sites.travel.@@project.componentry.components.commons.genericSlider;
 
 import java.util.Map;
 import java.util.Random;

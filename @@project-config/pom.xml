@@ -6,17 +6,17 @@
 
     <parent>
         <groupId>com.nationalgeographic.sites.travel</groupId>
-        <artifactId>lodges-parent</artifactId>
+        <artifactId>@@project-parent</artifactId>
         <version>1.0.0-local</version>
     </parent>
 
-    <artifactId>lodges-config</artifactId>
+    <artifactId>@@project-config</artifactId>
     <packaging>content-package</packaging>
 
     <name>${project.groupId} - ${project.artifactId}</name>
 
     <description>
-        A CQ package that contains all configuration information for the 'Travel Lodges website' project.
+        A CQ package that contains all configuration information for the 'Travel @@project website' project.
 
         The config information for all environments (dev, qa, production etc.) can all be co-located in this one module
         and can then be targeted at specific environments by using the runmodes functionality in CQ. See

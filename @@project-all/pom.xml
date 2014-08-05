@@ -6,17 +6,17 @@
 
     <parent>
         <groupId>com.nationalgeographic.sites.travel</groupId>
-        <artifactId>lodges-parent</artifactId>
+        <artifactId>@@project-parent</artifactId>
         <version>1.0.0-local</version>
     </parent>
 
-    <artifactId>lodges-all</artifactId>
+    <artifactId>@@project-all</artifactId>
     <packaging>content-package</packaging>
 
     <name>${project.groupId} - ${project.artifactId}</name>
 
     <description>
-        Builds a CQ package containing all components of the 'Travel Lodges website' project. Useful for making formal
+        Builds a CQ package containing all components of the 'Travel @@project website' project. Useful for making formal
         releases to QA and production environments for example.
     </description>
 
@@ -27,29 +27,29 @@
     <dependencies>
         <dependency>
             <groupId>${project.groupId}</groupId>
-            <artifactId>lodges-config</artifactId>
+            <artifactId>@@project-config</artifactId>
             <version>${project.version}</version>
             <type>content-package</type>
         </dependency>
         <dependency>
             <groupId>${project.groupId}</groupId>
-            <artifactId>lodges-view</artifactId>
+            <artifactId>@@project-view</artifactId>
             <version>${project.version}</version>
             <type>content-package</type>
         </dependency>
         <dependency>
             <groupId>${project.groupId}</groupId>
-            <artifactId>lodges-taglib</artifactId>
+            <artifactId>@@project-taglib</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
             <groupId>${project.groupId}</groupId>
-            <artifactId>lodges-services</artifactId>
+            <artifactId>@@project-services</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
             <groupId>${project.groupId}</groupId>
-            <artifactId>lodges-componentry</artifactId>
+            <artifactId>@@project-componentry</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
@@ -72,33 +72,33 @@
                             <goal>package</goal>
                         </goals>
                         <configuration>
-                            <embeddedTarget>/apps/lodges/install</embeddedTarget>
+                            <embeddedTarget>/apps/@@project/install</embeddedTarget>
                             <embeddeds>
                                 <embedded>
                                     <groupId>${project.groupId}</groupId>
-                                    <artifactId>lodges-services</artifactId>
+                                    <artifactId>@@project-services</artifactId>
                                     <filter>true</filter>
                                 </embedded>
                                 <embedded>
                                     <groupId>${project.groupId}</groupId>
-                                    <artifactId>lodges-componentry</artifactId>
+                                    <artifactId>@@project-componentry</artifactId>
                                     <filter>true</filter>
                                 </embedded>
                                 <embedded>
                                     <groupId>${project.groupId}</groupId>
-                                    <artifactId>lodges-taglib</artifactId>
+                                    <artifactId>@@project-taglib</artifactId>
                                     <filter>true</filter>
                                 </embedded>
                             </embeddeds>
                             <subPackages>
                                 <subPackage>
                                     <groupId>${project.groupId}</groupId>
-                                    <artifactId>lodges-config</artifactId>
+                                    <artifactId>@@project-config</artifactId>
                                     <filter>true</filter>
                                 </subPackage>
                                 <subPackage>
                                     <groupId>${project.groupId}</groupId>
-                                    <artifactId>lodges-view</artifactId>
+                                    <artifactId>@@project-view</artifactId>
                                     <filter>true</filter>
                                 </subPackage>
                                 <subPackage>

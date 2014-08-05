@@ -1,10 +1,10 @@
-package com.nationalgeographic.sites.travel.lodges.taglib;
+package com.nationalgeographic.sites.travel.@@project.taglib;
 
 import com.cqblueprints.taglib.CqSimpleTagSupport;
 import com.squeakysand.jsp.tagext.annotations.JspTag;
 import com.squeakysand.jsp.tagext.annotations.JspTagAttribute;
 
-import com.nationalgeographic.sites.travel.lodges.services.GoodbyeWorldService;
+import com.nationalgeographic.sites.travel.@@project.services.GoodbyeWorldService;
 
 import java.io.IOException;
 

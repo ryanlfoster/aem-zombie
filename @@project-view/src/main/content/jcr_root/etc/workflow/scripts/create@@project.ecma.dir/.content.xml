@@ -5,5 +5,5 @@
         jcr:lastModifiedBy="system"
         jcr:mixinTypes="[mix:title]"
         jcr:primaryType="nt:resource"
-        jcr:title="Create Lodges (Script)"/>
+        jcr:title="Create @@project (Script)"/>
 </jcr:root>

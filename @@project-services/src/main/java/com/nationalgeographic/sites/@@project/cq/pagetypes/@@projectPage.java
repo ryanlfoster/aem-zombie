@@ -1,8 +1,8 @@
-package com.nationalgeographic.sites.travel.lodges.cq.pagetypes;
+package com.nationalgeographic.sites.travel.@@project.cq.pagetypes;
 
 import com.nationalgeographic.cq.pagetypes.util.NgsPage;
-import com.nationalgeographic.sites.travel.lodges.cq.object.LodgesObject;
+import com.nationalgeographic.sites.travel.@@project.cq.object.@@projectObject;
 
-public interface LodgesPage extends NgsPage, LodgesObject {
+public interface @@projectPage extends NgsPage, @@projectObject {
 
 }

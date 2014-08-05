@@ -5,12 +5,12 @@
  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
  <modelVersion>4.0.0</modelVersion>
  <groupId>com.nationalgeographic.sites.travel</groupId>
- <artifactId>lodges-parent</artifactId>
+ <artifactId>@@project-parent</artifactId>
  <version>1.0.0-local</version>
  <packaging>pom</packaging>
  <name>${project.groupId} - ${project.artifactId}</name>
  <description>
-        Parent Maven POM for the 'Travel Lodges website' project.
+        Parent Maven POM for the 'Travel @@project website' project.
     </description>
  <properties>
   <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -25,12 +25,12 @@
   <dependency.platform.version>1.6.1-282</dependency.platform.version>
  </properties>
  <modules>
-  <module>lodges-view</module>
-  <module>lodges-services</module>
-  <module>lodges-config</module>
-  <module>lodges-taglib</module>
-  <module>lodges-all</module>
-  <module>lodges-componentry</module>
+  <module>@@project-view</module>
+  <module>@@project-services</module>
+  <module>@@project-config</module>
+  <module>@@project-taglib</module>
+  <module>@@project-all</module>
+  <module>@@project-componentry</module>
  </modules>
  <dependencyManagement>
   <dependencies>

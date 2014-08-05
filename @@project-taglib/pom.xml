@@ -6,29 +6,29 @@
 
     <parent>
         <groupId>com.nationalgeographic.sites.travel</groupId>
-        <artifactId>lodges-parent</artifactId>
+        <artifactId>@@project-parent</artifactId>
         <version>1.0.0-local</version>
     </parent>
 
-    <artifactId>lodges-taglib</artifactId>
+    <artifactId>@@project-taglib</artifactId>
     <packaging>bundle</packaging>
 
     <name>${project.groupId} - ${project.artifactId}</name>
 
     <description>
-        A JSP custom Tag Library for use within JSPs in the 'Travel Lodges website' project.
+        A JSP custom Tag Library for use within JSPs in the 'Travel @@project website' project.
 
         During development this bundle can be automatically deployed to your CQ instance by activating the
         "auto-deploy" profile and running the Maven "install" lifecycle phase (e.g. "mvn -Pauto-deploy install"). This
         can also be done from within most IDEs like Eclipse.
     </description>
 
-    <url>http://com.nationalgeographic.sites.travel.lodges/taglibs/${project.artifactId}</url>
+    <url>http://com.nationalgeographic.sites.travel.@@project/taglibs/${project.artifactId}</url>
 
     <dependencies>
         <dependency>
             <groupId>${project.groupId}</groupId>
-            <artifactId>lodges-services</artifactId>
+            <artifactId>@@project-services</artifactId>
             <version>${project.version}</version>
             <scope>provided</scope>
         </dependency>
@@ -86,7 +86,7 @@
                 <groupId>com.squeakysand.jsp</groupId>
                 <artifactId>jsptld-maven-plugin</artifactId>
                 <configuration>
-                    <shortName>ngs-lodges</shortName>
+                    <shortName>ngs-@@project</shortName>
                     <processTagFiles>true</processTagFiles>
                 </configuration>
                 <executions>
@@ -103,7 +103,7 @@
                 <extensions>true</extensions>
                 <configuration>
                     <instructions>
-                        <Bundle-Activator>com.nationalgeographic.sites.travel.lodges.taglib.osgi.Activator</Bundle-Activator>
+                        <Bundle-Activator>com.nationalgeographic.sites.travel.@@project.taglib.osgi.Activator</Bundle-Activator>
                         <Include-Resource>
                             META-INF/${project.artifactId}-${project.version}.tld=${project.build.outputDirectory}/META-INF/${project.artifactId}-${project.version}.tld,
                             {maven-resources}

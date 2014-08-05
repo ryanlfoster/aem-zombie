@@ -1,4 +1,4 @@
-package com.nationalgeographic.sites.travel.lodges.componentry.components.commons.genericSlider;
+package com.nationalgeographic.sites.travel.@@project.componentry.components.commons.genericSlider;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -18,8 +18,8 @@ import com.nationalgeographic.componentry.model.AbstractComponentModel;
 import com.nationalgeographic.cq.pagetypes.util.NgsObject;
 import com.nationalgeographic.cq.query.NgsPickerQueryComponent;
 import com.nationalgeographic.cq.util.RequestContext;
-import com.nationalgeographic.sites.travel.lodges.componentry.components.commons.genericSlider.paramsResolver.ParamsResolver;
-import com.nationalgeographic.sites.travel.lodges.componentry.components.commons.genericSlider.paramsResolver.impl.DesignerDlgParamsResolver;
+import com.nationalgeographic.sites.travel.@@project.componentry.components.commons.genericSlider.paramsResolver.ParamsResolver;
+import com.nationalgeographic.sites.travel.@@project.componentry.components.commons.genericSlider.paramsResolver.impl.DesignerDlgParamsResolver;
 
 public class GenericSlider extends AbstractComponentModel {
 

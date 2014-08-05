@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <workspaceFilter version="1.0">
-    <filter root="/apps/lodges">
-        <exclude pattern="/apps/lodges/install.*"/>
-        <exclude pattern="/apps/lodges/runmodes.*"/>
+    <filter root="/apps/@@project">
+        <exclude pattern="/apps/@@project/install.*"/>
+        <exclude pattern="/apps/@@project/runmodes.*"/>
     </filter>
-    <filter root="/etc/clientlibs/lodges"/>
-	<filter root="/etc/designs/lodges">
-        <exclude pattern="/etc/designs/lodges/jcr:content.*"/>
+    <filter root="/etc/clientlibs/@@project"/>
+	<filter root="/etc/designs/@@project">
+        <exclude pattern="/etc/designs/@@project/jcr:content.*"/>
     </filter>
     <filter root="/etc/workflow/scripts/createLodge.ecma"/>
     <filter root="/etc/workflow/launcher/config/create_lodge_structure"/>

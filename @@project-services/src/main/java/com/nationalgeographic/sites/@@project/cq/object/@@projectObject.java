@@ -1,11 +1,11 @@
-package com.nationalgeographic.sites.travel.lodges.cq.object;
+package com.nationalgeographic.sites.travel.@@project.cq.object;
 
 import java.util.List;
 
 import com.nationalgeographic.cq.pagetypes.util.NgsObject;
 import org.apache.sling.commons.json.JSONObject;
 
-public interface LodgesObject extends NgsObject{
+public interface @@projectObject extends NgsObject{
     public String getExperiences();
     public String getNearBy();
     public String getLatitude();

@@ -3,4 +3,4 @@
     jcr:description="About"
     jcr:primaryType="cq:Component"
     jcr:title="About"
-    sling:resourceSuperType="lodges/components/pagetypes/home"/>
+    sling:resourceSuperType="@@project/components/pagetypes/home"/>

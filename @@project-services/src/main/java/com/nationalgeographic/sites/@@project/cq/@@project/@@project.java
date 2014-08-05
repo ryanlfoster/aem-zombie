@@ -1,4 +1,4 @@
-package com.nationalgeographic.sites.travel.lodges.cq.lodge;
+package com.nationalgeographic.sites.travel.@@project.cq.lodge;
 
 public class Lodge {
 	private String title;

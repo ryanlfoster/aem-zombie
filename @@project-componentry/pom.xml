@@ -6,14 +6,14 @@
  <modelVersion>4.0.0</modelVersion>
  <parent>
   <groupId>com.nationalgeographic.sites.travel</groupId>
-  <artifactId>lodges-parent</artifactId>
+  <artifactId>@@project-parent</artifactId>
   <version>1.0.0-local</version>
  </parent>
- <artifactId>lodges-componentry</artifactId>
+ <artifactId>@@project-componentry</artifactId>
  <packaging>bundle</packaging>
  <name>${project.groupId} - ${project.artifactId}</name>
  <description>
-        An OSGi Bundle containing all of the backend CQ service implementations for the 'Travel Lodges website' project.
+        An OSGi Bundle containing all of the backend CQ service implementations for the 'Travel @@project website' project.
 
         During development, this bundle can be automatically deployed to your CQ instance by activating the
         "auto-deploy" profile and running the Maven "install" lifecycle phase (e.g. "mvn -Pauto-deploy install"). This
@@ -80,7 +80,7 @@
   </dependency>
   <dependency>
    <groupId>com.nationalgeographic.sites.travel</groupId>
-   <artifactId>lodges-services</artifactId>
+   <artifactId>@@project-services</artifactId>
    <version>${project.version}</version>
    <scope>provided</scope>
   </dependency>
@@ -135,7 +135,7 @@
     <extensions>true</extensions>
     <configuration>
      <instructions>
-      <Bundle-Activator>com.nationalgeographic.sites.travel.lodges.services.osgi.Activator</Bundle-Activator>
+      <Bundle-Activator>com.nationalgeographic.sites.travel.@@project.services.osgi.Activator</Bundle-Activator>
      </instructions>
     </configuration>
    </plugin>

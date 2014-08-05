@@ -1,4 +1,4 @@
-package com.nationalgeographic.sites.travel.lodges.cq.object.factory;
+package com.nationalgeographic.sites.travel.@@project.cq.object.factory;
 
 import org.apache.felix.scr.annotations.Component;
 import org.apache.felix.scr.annotations.Properties;
@@ -10,7 +10,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import com.day.cq.wcm.api.Page;
-import com.nationalgeographic.sites.travel.lodges.cq.util.LodgesPageTypeResourceTypes;
+import com.nationalgeographic.sites.travel.@@project.cq.util.@@projectPageTypeResourceTypes;
 
 @Component
 @Service(value = org.apache.sling.api.adapter.AdapterFactory.class)
@@ -20,10 +20,10 @@ import com.nationalgeographic.sites.travel.lodges.cq.util.LodgesPageTypeResource
         @Property(name="adapters", 
         value= {"com.nationalgeographic.cq.pagetypes.util.NgsObject"})
 })
-public class LodgesObjectsAdapterFactory implements AdapterFactory {
+public class @@projectObjectsAdapterFactory implements AdapterFactory {
     
     private static final Logger log = LoggerFactory
-            .getLogger(LodgesObjectsAdapterFactory.class);
+            .getLogger(@@projectObjectsAdapterFactory.class);
     
     @Override
     @SuppressWarnings("unchecked")
@@ -57,7 +57,7 @@ public class LodgesObjectsAdapterFactory implements AdapterFactory {
                     return null;
                 }
                 
-                Class myClass = LodgesPageTypeResourceTypes
+                Class myClass = @@projectPageTypeResourceTypes
                         .pageTypeFromResourceType(resourceType);
                 
                 if(myClass==null) {

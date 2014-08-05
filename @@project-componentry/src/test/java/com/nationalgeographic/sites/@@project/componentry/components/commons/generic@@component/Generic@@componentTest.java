@@ -1,4 +1,4 @@
-package com.nationalgeographic.sites.travel.lodges.componentry.components.commons.genericSlider;
+package com.nationalgeographic.sites.travel.@@project.componentry.components.commons.genericSlider;
 
 import static org.junit.Assert.assertNotNull;
 import static org.powermock.api.mockito.PowerMockito.mock;
@@ -116,7 +116,7 @@ public class GenericSliderTest extends GenericSliderTestBase {
             when(ngsObject2.getContentResource()).thenReturn(resourceItem2);
             // Return the original path for the item that wasn't overwritten.
             when(resourceItem2.getPath()).thenReturn(assetPath2);
-            when(externalizer.externalLink(null, "lodges", assetPath2)).thenReturn(assetPath2);
+            when(externalizer.externalLink(null, "@@project", assetPath2)).thenReturn(assetPath2);
             when(resourceItem2.adaptTo(ValueMap.class)).thenReturn(properitesItem2);
             when(properitesItem2.get(text1path, (String) null)).thenReturn("OriginalTitle");
             when(properitesItem2.get(text2path, (String) null)).thenReturn("OriginalAbstract");

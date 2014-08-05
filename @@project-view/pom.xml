@@ -6,24 +6,24 @@
 
     <parent>
         <groupId>com.nationalgeographic.sites.travel</groupId>
-        <artifactId>lodges-parent</artifactId>
+        <artifactId>@@project-parent</artifactId>
         <version>1.0.0-local</version>
     </parent>
 
-    <artifactId>lodges-view</artifactId>
+    <artifactId>@@project-view</artifactId>
     <packaging>content-package</packaging>
 
     <name>${project.groupId} - ${project.artifactId}</name>
 
     <description>
-        All of the CQ component and template definitions for the 'Travel Lodges website' project.
+        All of the CQ component and template definitions for the 'Travel @@project website' project.
 
         During development, the files in this module should be sync'd to your CQ instance using the FileVault command
         line tool available with CQ. There is also a plugin for Eclipse called "vaultclipse" that can be used instead
         of the command line tool.
 
         It is recommended that this module not contain any Java code and instead Java code should be placed in either
-        the lodges-taglib module or the lodges-services module as appropriate.
+        the @@project-taglib module or the @@project-services module as appropriate.
     </description>
     
     <properties>

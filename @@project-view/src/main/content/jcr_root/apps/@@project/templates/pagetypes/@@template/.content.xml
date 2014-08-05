@@ -3,13 +3,13 @@
     jcr:description="Create a new lodge"
     jcr:primaryType="cq:Template"
     jcr:title="Lodge"
-    allowedPaths="[/content/national-geographic-lodges(/.*)?]"
+    allowedPaths="[/content/national-geographic-@@project(/.*)?]"
     ranking="{Long}100">
     <jcr:content
-        cq:designPath="/etc/designs/lodges"
+        cq:designPath="/etc/designs/@@project"
         jcr:primaryType="cq:PageContent"
-        sling:resourceType="lodges/components/pagetypes/lodge"
-        cq:tags="[ngs_genres:lodges_article]"
+        sling:resourceType="@@project/components/pagetypes/lodge"
+        cq:tags="[ngs_genres:@@project_article]"
         sling:redirect="{Boolean}true"
         sling:redirectStatus="302">
     </jcr:content>
